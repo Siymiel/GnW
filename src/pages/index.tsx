@@ -10,6 +10,8 @@ import { GiNetworkBars } from "react-icons/gi";
 import { GoFileSymlinkDirectory } from "react-icons/go";
 import Card001 from "@/components/cards/Card001";
 import FeatureSection from "@/sections/home/Feature";
+import TeamSection from "@/sections/home/Team";
+import Testimonial from "@/sections/home/Testimonial";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -60,6 +62,13 @@ export default function Home() {
         </section>
         <section className={styles.backgroundTwo}></section>
         <FeatureSection />
+        <TeamSection />
+        <div className="pt-20">
+          <h4 className="text-3xl font-semibold uppercase text-center">
+            What our clients say
+          </h4>
+        </div>
+        <Testimonial />
         <Footer />
       </main>
     </>
