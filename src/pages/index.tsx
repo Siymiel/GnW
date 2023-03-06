@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from "@/components/NavBar";
 import HeroSlider from "@/components/Slider";
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -18,6 +19,22 @@ export default function Home() {
       <main>
         <NavBar />
         <HeroSlider />
+        <section className="pt-36  max-w-4xl mx-auto py-20">
+          <h1 className="text-4xl pb-16 font-bold tracking-wide text-center text-gray-700">
+            PHILOSOPHY
+          </h1>
+          <p className="text-xl font-semibold leading-8 tracking-wide text-center text-gray-500">
+            LeadVision is quickly becoming the leader in lead generation for
+            niche markets. Through a combination of inbound marketing
+            techniques, our team of experts generate sales leads for products
+            and services in industries such as industrial equipment, solar
+            power, and moving. We are a creative bunch who seek out obscure
+            markets and insert ourselves to provide marketing support to
+            hundreds of companies in over seven countries.
+          </p>
+        </section>
+        <section className={styles.background}></section>
+        <Footer />
       </main>
     </>
   );
