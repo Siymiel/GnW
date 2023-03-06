@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 pt-20">
+    <footer className="w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 mt-20">
       <span className="text-sm text-gray-500 sm:text-center">
         © 2023 Copyright LeadVision LLC., All Rights Reserved.
       </span>

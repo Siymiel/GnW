@@ -3,8 +3,13 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from "@/components/NavBar";
-import HeroSlider from "@/components/Slider";
+import HeroSlider from "@/components/HeroSlider";
 import Footer from "@/components/Footer";
+import { FaQuestionCircle } from "react-icons/fa";
+import { GiNetworkBars } from "react-icons/gi";
+import { GoFileSymlinkDirectory } from "react-icons/go";
+import Card001 from "@/components/cards/Card001";
+import FeatureSection from "@/sections/home/Feature";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -34,6 +39,27 @@ export default function Home() {
           </p>
         </section>
         <section className={styles.background}></section>
+        <section className="pt-36  max-w-6xl mx-auto py-20">
+          <h1 className="text-4xl pb-28 font-bold tracking-wide text-center text-gray-700">
+            WHY CHOOSE US?
+          </h1>
+          <section className="grid grid-cols-3 gap-8">
+            <Card001
+              title="WHY US"
+              icon={<FaQuestionCircle className="w-28 h-28" />}
+            />
+            <Card001
+              title="INVESTMENT"
+              icon={<GiNetworkBars className="w-28 h-28" />}
+            />
+            <Card001
+              title="EMPLOYMENT"
+              icon={<GoFileSymlinkDirectory className="w-28 h-28" />}
+            />
+          </section>
+        </section>
+        <section className={styles.backgroundTwo}></section>
+        <FeatureSection />
         <Footer />
       </main>
     </>

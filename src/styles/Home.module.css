@@ -283,3 +283,9 @@
   background-size: cover;
   height: 80vh;
 }
+.backgroundTwo {
+  background-image: url("https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
