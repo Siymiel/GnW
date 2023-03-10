@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-interface IProps {
-  
-}
+interface IProps {}
 
 const Card003: React.FC<IProps> = () => {
   return (

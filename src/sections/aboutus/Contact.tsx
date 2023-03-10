@@ -234,7 +234,7 @@ const Contact = () => {
                       <textarea
                         name="message"
                         id="message"
-                        rows="4"
+                        rows={4}
                         className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-sm leading-6 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                       ></textarea>
                     </div>

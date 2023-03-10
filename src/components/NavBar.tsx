@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable @next/next/no-img-element */
 const NavBar = () => {
   return (
     <nav className="bg-white px-2 sm:px-4 py-5 top-0 fixed z-20 w-full  shadow shadow-teal-200">

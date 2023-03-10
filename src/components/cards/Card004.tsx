@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const Card004 = () => {
@@ -13,9 +14,7 @@ const Card004 = () => {
       </div>
       <div className="max-w-xl">
         <div className="mt-8 flex items-center gap-x-4 text-xs">
-          <time datetime="2020-03-16" className="text-gray-500">
-            Mar 16, 2020
-          </time>
+          <time className="text-gray-500">Mar 16, 2020</time>
           <a
             href="#"
             className="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 hover:bg-gray-100"
