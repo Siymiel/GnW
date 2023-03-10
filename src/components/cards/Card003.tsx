@@ -15,7 +15,7 @@ const Card003: React.FC<IProps> = () => {
         />
       </a>
       <div className="p-3">
-        <a href="#">
+        <a href="/blog/:id">
           <h5 className="mb-1 pt-3 text-3xl font-medium tracking-tight text-gray-900">
             Noteworthy technology acquisitions 2021
           </h5>
@@ -23,7 +23,9 @@ const Card003: React.FC<IProps> = () => {
         <div className="pb-4">
           <p className="font-semibold italic text-gray-500 text-sm tracking-wide">
             June 6, 2014{" "}
-            <span className="text-orange-500 ml-2">Entertainment, Games, News</span>
+            <span className="text-orange-500 ml-2">
+              Entertainment, Games, News
+            </span>
           </p>
         </div>
         <p className="mb-3 font-normal text-gray-700">

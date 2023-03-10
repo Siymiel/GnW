@@ -27,8 +27,8 @@ export default function Blog() {
             </div>
           </section>
         </section>
-      </main>
       <Footer />
+      </main>
     </>
   );
 }
