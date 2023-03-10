@@ -12,6 +12,7 @@ import Card001 from "@/components/cards/Card001";
 import FeatureSection from "@/sections/home/Feature";
 import TeamSection from "@/sections/home/Team";
 import Testimonial from "@/sections/home/Testimonial";
+import BlogSection from '@/sections/home/BlogSection';
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -27,10 +28,10 @@ export default function Home() {
         <NavBar />
         <HeroSlider />
         <section className="pt-36  max-w-4xl mx-auto py-20">
-          <h1 className="text-4xl pb-16 font-bold tracking-wide text-center text-gray-700">
+          <h1 className="text-4xl pb-14 font-semibold tracking-wide text-center text-gray-700">
             PHILOSOPHY
           </h1>
-          <p className="text-xl font-semibold leading-8 tracking-wide text-center text-gray-500">
+          <p className="text-xl font-medium leading-8 tracking-wide text-center text-gray-500">
             LeadVision is quickly becoming the leader in lead generation for
             niche markets. Through a combination of inbound marketing
             techniques, our team of experts generate sales leads for products
@@ -42,8 +43,8 @@ export default function Home() {
         </section>
         <section className={styles.background}></section>
         <section className="pt-36  max-w-6xl mx-auto py-20">
-          <h1 className="text-4xl pb-28 font-bold tracking-wide text-center text-gray-700">
-            WHY CHOOSE US?
+          <h1 className="text-4xl pb-28 font-semibold uppercase tracking-wide text-center text-gray-700">
+            Why Choose Us?
           </h1>
           <section className="grid grid-cols-3 gap-8">
             <Card001
@@ -62,13 +63,9 @@ export default function Home() {
         </section>
         <section className={styles.backgroundTwo}></section>
         <FeatureSection />
-        <TeamSection />
-        <div className="pt-20">
-          <h4 className="text-3xl font-semibold uppercase text-center">
-            What our clients say
-          </h4>
-        </div>
         <Testimonial />
+        <TeamSection />
+        <BlogSection />
         <Footer />
       </main>
     </>
