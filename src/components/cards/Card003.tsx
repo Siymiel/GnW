@@ -7,16 +7,16 @@ interface IProps {}
 const Card003: React.FC<IProps> = () => {
   return (
     <div className=" bg-white pb-10">
-      <a href="#">
+      <a href="/blog/:id">
         <img
-          className="h-96 w-full object-cover object-center"
+          className="h-96 w-full object-cover object-center hover:opacity-90 transition-all"
           src="https://images.unsplash.com/photo-1612860606900-25b4b0bc79ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           alt="altimag"
         />
       </a>
       <div className="p-3">
         <a href="/blog/:id">
-          <h5 className="mb-1 pt-3 text-3xl font-medium tracking-tight text-gray-900">
+          <h5 className="mb-1 pt-3 text-3xl font-medium tracking-tight text-gray-900 hover:text-gray-600">
             Noteworthy technology acquisitions 2021
           </h5>
         </a>

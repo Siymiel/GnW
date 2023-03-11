@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import styles from "@/styles/Investors.module.css";
 export default function Careers() {
   return (
     <>
@@ -12,6 +13,40 @@ export default function Careers() {
       </Head>
       <main>
         <NavBar />
+        <section className={styles.backgroundInvestors}>
+          <div className="z-20 text-white grid grid-cols-2 h-full">
+            <div className="grid items-end pb-4 justify-center">
+              <div className="ml-20 border-4 border-white">
+                <p className="text-5xl pb-4 font-bold tracking-wide text-left uppercase px-4">
+                  <span className="text-orange-500">STAND</span> OUT
+                </p>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </section>
+
+        <section className="max-w-4xl mx-auto pb-20 px-5 md:px-0">
+          <div className="flex items-center justify-center pt-20 pb-5 md:pb-9">
+            <p className="text-center text-3xl md:text-4xl font-bold text-gray-800 flex items-center">
+              <hr className="w-10 md:w-20 h-1 bg-gray-700 border-0 rounded my-1 mr-2 md:mr-5"></hr>
+              <span>EMPLOYMENT OPPORTUNITIES</span>
+              <hr className="w-10 md:w-20 h-1 bg-gray-700 border-0 rounded my-1 ml-2 md:ml-5"></hr>
+            </p>
+          </div>
+          <p className="text-center text-sm">
+            We are always looking for bright new talent to add to our
+            ever-growing team! Find out what it is like to work for one of the
+            fastest growing companies in the lead generation industry. We can
+            offer you exciting opportunities as part of a global team. Whether
+            you are a Sales Warrior, a Marketing Ninja or a Finance Genius, we
+            want to hear from you. For more information about our open careers
+            see below.
+          </p>
+        </section>
+        <section className="max-w-4xl mx-auto pb-20">
+          <p className="text-center text-xl text-orange-400 uppercase">No opportunities currently</p>
+        </section>
         <Footer />
       </main>
     </>

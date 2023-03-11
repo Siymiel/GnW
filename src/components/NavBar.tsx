@@ -5,6 +5,7 @@ import { useState } from "react";
 const NavBar = () => {
   const router = useRouter();
   const [path] = useState(router.pathname);
+  
   return (
     <nav className="bg-white px-2 sm:px-4 py-5 top-0 fixed z-20 w-full  shadow shadow-teal-200">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -96,8 +97,8 @@ const NavBar = () => {
             <li>
               <a
                 href="/blog"
-                className={`block py-2 pl-3 pr-4 rounded md:p-1 hover:bg-blue-100  transition-all${
-                  path == "/blog"
+                className={`block py-2 pl-3 pr-4 rounded md:p-1 hover:bg-blue-100  transition-all ${
+                  path == "/blog" || path == "/blog/[id]"
                     ? "text-white md:text-blue-700 bg-blue-700 md:bg-gray-100"
                     : "text-gray-700 "
                 }`}

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import React, { useEffect } from "react";
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from "@/components/NavBar";
@@ -13,9 +13,15 @@ import FeatureSection from "@/sections/home/Feature";
 import TeamSection from "@/sections/home/Team";
 import Testimonial from "@/sections/home/Testimonial";
 import BlogSection from '@/sections/home/BlogSection';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Head>
@@ -28,10 +34,23 @@ export default function Home() {
         <NavBar />
         <HeroSlider />
         <section className="pt-36  max-w-4xl mx-auto py-20">
-          <h1 className="text-4xl pb-14 font-semibold tracking-wide text-center text-gray-700">
+          <h1
+            className="text-4xl pb-7 font-semibold tracking-wide text-center text-gray-700"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-easing="ease-out-cubic"
+          >
             PHILOSOPHY
           </h1>
-          <p className="text-xl font-medium leading-8 tracking-wide text-center text-gray-500">
+          <p
+            className="text-xl font-normal text-center text-gray-500"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
             LeadVision is quickly becoming the leader in lead generation for
             niche markets. Through a combination of inbound marketing
             techniques, our team of experts generate sales leads for products
@@ -41,7 +60,9 @@ export default function Home() {
             hundreds of companies in over seven countries.
           </p>
         </section>
-        <section className={styles.background}></section>
+        <section
+          className={styles.background}
+        ></section>
         <section className="pt-36  max-w-6xl mx-auto py-20">
           <h1 className="text-4xl pb-28 font-semibold uppercase tracking-wide text-center text-gray-700">
             Why Choose Us?

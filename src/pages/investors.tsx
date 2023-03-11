@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import styles from "@/styles/Investors.module.css";
 export default function Investors() {
   return (
     <>
@@ -12,6 +13,129 @@ export default function Investors() {
       </Head>
       <main>
         <NavBar />
+        <section className={styles.backgroundInvestors}></section>
+        <section className="pt-20 max-w-6xl mx-auto py-20 px-5 md:px-0">
+          <h1
+            className="text-5xl pb-4 font-bold tracking-wide text-center text-gray-700 uppercase"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-easing="ease-out-cubic"
+          >
+            What is <span className="text-orange-500">LLC?</span>
+          </h1>
+          <div className="flex items-center justify-center pb-5 md:pb-9">
+            <p className="text-center text-base font-medium text-gray-800 flex items-center">
+              <hr className="w-10 md:w-20 h-1 bg-gray-700 border-0 rounded my-1 mr-2 md:mr-5"></hr>
+              <span>IT CONSULTANT . SOLUTION PROVIDER</span>
+              <hr className="w-10 md:w-20 h-1 bg-gray-700 border-0 rounded my-1 ml-2 md:ml-5"></hr>
+            </p>
+          </div>
+          <p
+            className="text-sm md:text-base font-normal text-center text-gray-500"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            LeadVision is a Delaware Corporation with operations in Charlotte,
+            North Carolina. LeadVision was started in April of 2006 with the
+            idea of connecting customers to service providers in very niche
+            areas. The first market we dove into was the forklift market. I know
+            that sounds strange, but think of it this way. How many companies
+            use forklifts? Any business with a warehouse. How else could Home
+            Depot put thousands of pounds of lumber on a shelf, fourteen feet
+            high in the air? How else could Carnival Cruise Lines get enough
+            food and drinks for 4,000 passengers for an entire week? How else
+            could Boeing move airplane wings and other heavy parts around their
+            warehouse? Get the point? Good, now on to the next point. If I asked
+            you where the closest forklift dealership was to your current
+            location, could you get me there? If you are like most people, the
+            answer would be, “No”! That is because forklift dealers are where
+            car dealers were 15 years ago. There is no Carmax for forklifts.
+            There is no Kelly Blue Book or NADA. The marketing for this industry
+            is relatively archaic. So, what have we learned here. Most companies
+            need forklifts and forklift dealers don’t advertise particularly
+            aggressively. Hence, the birth of LeadVision and our first website
+            www.123Forklift.com. This site is about as niche as you can get. The
+            closest thing I can equate it to would be an orphan drug in the
+            pharmaceutical market. A niche market like this will keep most
+            competitors at bay, and quickly became a staple among the forklift
+            community.
+          </p>
+        </section>
+        <section className={styles.backgroundInvestors1}>
+          <div className="z-20 text-white grid grid-cols-2 h-full">
+            <div className="grid items-center justify-center">
+              <div className="ml-20">
+                <p className="text-4xl pb-4 font-bold tracking-wide text-left uppercase">
+                  <span className="text-orange-500">MARKET</span> . TRENDSETTING
+                </p>
+                <p className="text-base text-left">
+                  We provide dealers with a cheaper marketing mechanism than
+                  they could do themselves. We find people who need forklifts
+                  and get them multiple bids from forklift dealers without
+                  having to leave their yoga class. Customers love us and the
+                  dealer community loves us.
+                </p>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </section>
+
+        <section className="pt-20 max-w-6xl mx-auto py-20 px-5 md:px-0">
+          <h1
+            className="text-5xl pb-4 font-bold tracking-wide text-center text-gray-700 uppercase"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-easing="ease-out-cubic"
+          >
+            So what next <span className="text-orange-500">Now?</span>
+          </h1>
+          <div className="flex items-center justify-center pb-5 md:pb-9">
+            <p className="text-center text-base font-medium text-gray-800 flex items-center">
+              <hr className="w-10 md:w-20 h-1 bg-gray-700 border-0 rounded my-1 mr-2 md:mr-5"></hr>
+              <span>PARTNER . CONSULT . EXPERIENCE</span>
+              <hr className="w-10 md:w-20 h-1 bg-gray-700 border-0 rounded my-1 ml-2 md:ml-5"></hr>
+            </p>
+          </div>
+          <p
+            className="text-sm md:text-base font-normal text-center text-gray-500"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            LeadVision is a Delaware Corporation with operations in Charlotte,
+            North Carolina. LeadVision was started in April of 2006 with the
+            idea of connecting customers to service providers in very niche
+            areas. The first market we dove into was the forklift market. I know
+            that sounds strange, but think of it this way. How many companies
+            use forklifts? Any business with a warehouse. How else could Home
+            Depot put thousands of pounds of lumber on a shelf, fourteen feet
+            high in the air? How else could Carnival Cruise Lines get enough
+            food and drinks for 4,000 passengers for an entire week? How else
+            could Boeing move airplane wings and other heavy parts around their
+            warehouse? Get the point? Good, now on to the next point. If I asked
+            you where the closest forklift dealership was to your current
+            location, could you get me there? If you are like most people, the
+            answer would be, “No”! That is because forklift dealers are where
+            car dealers were 15 years ago. There is no Carmax for forklifts.
+            There is no Kelly Blue Book or NADA. The marketing for this industry
+            is relatively archaic. So, what have we learned here. Most companies
+            need forklifts and forklift dealers don’t advertise particularly
+            aggressively. Hence, the birth of LeadVision and our first website
+            www.123Forklift.com. This site is about as niche as you can get. The
+            closest thing I can equate it to would be an orphan drug in the
+            pharmaceutical market. A niche market like this will keep most
+            competitors at bay, and quickly became a staple among the forklift
+            community.
+          </p>
+        </section>
         <Footer />
       </main>
     </>
