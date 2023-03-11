@@ -15,7 +15,6 @@ import Testimonial from "@/sections/home/Testimonial";
 import BlogSection from '@/sections/home/BlogSection';
 import AOS from "aos";
 import "aos/dist/aos.css";
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   useEffect(() => {

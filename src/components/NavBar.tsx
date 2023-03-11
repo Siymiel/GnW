@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Link from "next/link"
 const NavBar = () => {
   const router = useRouter();
   const [path] = useState(router.pathname);
@@ -9,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="bg-white px-2 sm:px-4 py-5 top-0 fixed z-20 w-full  shadow shadow-teal-200">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="/" className={`flex items-center `}>
+        <Link href="/" className={`flex items-center `}>
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-10 mr-3 sm:h-9"
@@ -18,7 +19,7 @@ const NavBar = () => {
           <span className="self-center text-4xl font-semibold whitespace-nowrap">
             LLC
           </span>
-        </a>
+        </Link>
         {/* Hamburger */}
         <button
           data-collapse-toggle="navbar-default"
@@ -46,7 +47,7 @@ const NavBar = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col p-2 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm uppercase md:font-medium md:border-0 md:bg-white">
             <li>
-              <a
+              <Link
                 href="/"
                 className={`block py-2 pl-3 pr-4 rounded md:p-1 hover:bg-blue-100  transition-all ${
                   path == "/"
@@ -56,10 +57,10 @@ const NavBar = () => {
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/aboutus"
                 className={`block py-2 pl-3 pr-4 rounded md:p-1 hover:bg-blue-100  transition-all ${
                   path == "/aboutus"
@@ -68,10 +69,10 @@ const NavBar = () => {
                 }`}
               >
                 About us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/careers"
                 className={`block py-2 pl-3 pr-4 rounded md:p-1 hover:bg-blue-100  transition-all ${
                   path == "/careers"
@@ -80,10 +81,10 @@ const NavBar = () => {
                 }`}
               >
                 Careers
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/investors"
                 className={`block py-2 pl-3 pr-4 rounded md:p-1 hover:bg-blue-100  transition-all ${
                   path == "/investors"
@@ -92,10 +93,10 @@ const NavBar = () => {
                 }`}
               >
                 Investors
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/blog"
                 className={`block py-2 pl-3 pr-4 rounded md:p-1 hover:bg-blue-100  transition-all ${
                   path == "/blog" || path == "/blog/[id]"
@@ -104,7 +105,7 @@ const NavBar = () => {
                 }`}
               >
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
